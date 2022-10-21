@@ -110,7 +110,7 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY,                    XKB_KEY_d,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
-   { MODKEY,                    XKB_KEY_b,          spawn,          {.v = btconscmd} },
+   { MODKEY,                    XKB_KEY_b,          spawn,          {.v = btconcmd} },
    { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_b,          spawn,          {.v = btdisccmd} },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
 	{ MODKEY,                    XKB_KEY_k,          focusstack,     {.i = -1} },
