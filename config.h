@@ -99,7 +99,7 @@ static const double accel_speed = 0.0;
 
 /* commands */
 static const char *termcmd[] = { "alacritty", NULL };
-static const char *menucmd[] = { "rofi", "-show", "drun", "-show-icons, NULL };
+static const char *menucmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: c -> C, 2 -> at, etc. */
