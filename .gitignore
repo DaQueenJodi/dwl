@@ -1,4 +1,5 @@
 dwl
+*.patch
 *.o
 *-protocol.c
 *-protocol.h
