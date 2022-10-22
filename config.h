@@ -99,7 +99,7 @@ static const double accel_speed = 0.0;
 
 /* commands */
 static const char *termcmd[] = { "alacritty", NULL };
-static const char *menucmd[] = { "funnel", NULL };
+static const char *menucmd[] = { "fuzzel", NULL };
 static const char *scrnshot[] = { "wlscreenshot", "select", NULL };
 static const char *fscrnshot[] = { "wlscreenshot", "fullscreen", NULL};
 static const char *btconcmd[] = { "bluetoothctl", "connect", "28:52:E0:11:81:AF", NULL };
@@ -110,8 +110,10 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY,                    XKB_KEY_d,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
-   { MODKEY,                    XKB_KEY_b,          spawn,          {.v = btconcmd} },
-   { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_b,          spawn,          {.v = btdisccmd} },
+	{ MODKEY,                    XKB_KEY_b,          spawn,          {.v = btconcmd} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,          spawn,          {.v = btdisccmd} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_S,          spawn,          {.v = scrnshot} },
+	{ 0,                         XKB_KEY_PRTSCRN,    spawn,          {.v = fscrnshot} },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
 	{ MODKEY,                    XKB_KEY_k,          focusstack,     {.i = -1} },
 	{ MODKEY,                    XKB_KEY_h,          setmfact,       {.f = -0.05} },
